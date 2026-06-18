@@ -1,0 +1,33 @@
+<audio id="mySong" autoplay muted style="display:none;" >
+        <source src="video.mp3" type="audio/mpeg">
+</audio>
+<script>                                           
+     var song = document.getElementById("mySong");     
+    document.addEventListener('click', function() {
+            song.muted = false; 
+            song.play();
+        }, { once: true });
+    song.ontimeupdate = function() {
+      if (song.currentTime >= 10) { 
+            song.pause(); } 
+        };
+</script> 
+<style>
+   @keyframes movebox{
+       from{
+           left:0px;
+          }
+
+        to{
+          left: 300px;
+         }
+</style>
+<div class="black-background-box">
+    <h1 align="centre"><font color="red">MY PROJECT SCREENSHOT<h1></font>
+    <img src="loginphoto.png"
+          width="500"
+          onmouseover="this.src='maya.png'"
+          onmouseout= "this.src='loginphoto.png'">
+<div class="priya">
+</div>
+<button class="mode-btn" id="theme-button" onclick="toggleDarkMode()">☀️</button>

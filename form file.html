@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title> filling form </title>
+</head>
+<body>
+   <div class="orchid-background-box">
+   <div class="form-group">
+   <body bgcolor="yellow">
+    <h1 align = "center"> <font color = "blue">STUDENT CAREER COUNSELLING FORM</font></h1>
+     <form action="index2.html" method = "get">
+        <h4 style="color:palegreen; font-size: 15px;">IT IS NECESSARY TO FILL THE FORM FOR ENROLL THIS:</h4>
+        <br><br>
+        <lable style="font-size:20px;">First Name:</lable> </font> <input type = "text" name ="first_name"  required pattern="[A-Za-z]+"/>
+        <br><br>
+        <lable style="font-size:20px;">Last Name:</lable> </font> <input type = "text" name ="last_name" required pattern="[A-Za-z]+"/>
+        <br><br>
+         <lable style="font-size:20px;">Gender:</font></lable>
+        <input type = "radio" name = "gender" value = "female">female
+        <input type = "radio" name = "gender"value="male">male
+        <input type = "radio" name = "gender" value = "other">other
+        <br><br>
+        <lable style="font-size:20px">Mother's name:</lable><input type = "text" name = "Mothername"  />
+       <br><br>
+       <lable style="font-size:20px;">Father's name:</lable> <input type = "text" name = "Fathername"  />
+       <br><br>
+       <lable style="font-size:20px;">Phone number:</lable><input type = "text" name ="phonenumber" required pattern="\d{10}"/>
+       <br><br>
+       <lable style="font-size:20px;">Email:</lable><input type = "text" name = "email"></lable>
+       <br><br>
+       <lable style="font-size:20px;">Date of birth:</lable>
+        <input type="date">
+        <br><br> 
+       <lable style="font-size:20px;">Address:</lable></font><br>
+       <textarea rows="5" cols="40" placeholder= "Enter the address"> </textarea>
+       <br><br>
+       <h4 style="color:red; font-size:15px;">SELECT THE CASTE  THROUGH THE ARROW GIVEN BELOW:<br></h4></font>
+        <br><br>
+        <select name= "dropdown" required>
+            <option value="General" select>General </option>
+            <option value="ST"select>ST</option>
+            <option value="OBC"select>OBC</option>
+            <option value="EWS"select>EWS</option>
+            <option value="SC"select>SC</option>
+            <br><br>
+        </select>
+        <br><br>
+        <h4 style="color:blanchedalmond; font-size:15px;">UPLOAD YOUR 12TH RESULT GIVEN BELOW:<br></font></h4>
+        <br><br>
+        <input type = "file" name= "fileupload" accept = "image/*"/>
+        <br><br>
+        <h1 style="color:cyan; font-size:20px">GIVEN BELOW THE LINK OF SECOND PAGE!</h1>
+       <button type="submit">Next</button>
+    </form>
+    </div>
+      <style>
+           .orchid-background-box {
+               background-color:orchid;
+               padding: 30px;
+               border-radius:20px;
+               width:400px;
+              margin:50px auto;
+           } 
+               body{    
+                  background-image: url("verifiy photo.jpg");
+                  background-size: cover;
+                  background-position:center;
+                  margin:0;
+                  padding:0;
+               }
+            
+           .form-group{
+             display:flex;
+             flex-direction:column;
+             gap:10px
+           }
+           
+        </style>
+</body>
+</html>
